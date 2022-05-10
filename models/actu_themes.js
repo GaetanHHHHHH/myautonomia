@@ -11,6 +11,16 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      models.Actu_themes.belongsTo(models.Actualite, {
+        foreignKey: 'id',
+        targetKey: 'id', 
+        as: 'Actualite'
+      })
+      models.Actu_themes.belongsTo(models.Theme, {
+        foreignKey: 'id',
+        targetKey: 'id', 
+        as: 'Theme'
+      })
     }
   }
   Actu_themes.init({
