@@ -9,21 +9,26 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       date_publication: {
+        allowNull: false,
         type: Sequelize.DATE
       },
       titre: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       titre2: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       texte: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       lien: {
         type: Sequelize.STRING
       },
       vignette: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       createdAt: {
